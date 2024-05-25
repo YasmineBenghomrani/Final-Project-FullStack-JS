@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+body {
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .hero-bg-color {
+    @apply bg-gradient-to-r from-indigo-700 from-30% via-sky-500 to-white;
+  }
+  .heroW-bg-color {
+    @apply bg-gradient-to-r from-[#3a103a] via-[#672445ba]  to-white;
+  }
+}
